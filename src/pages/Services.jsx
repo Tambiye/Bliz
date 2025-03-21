@@ -9,18 +9,22 @@ const Services = () => {
 
 
             <section className="service-container">
-                <div className="service-item">
+            <div className="service-item">
                     <img className="service-image"
-                        src="https://files.oaiusercontent.com/file-VLjpCM2z4rq7ZMunne48Dv?se=2025-03-21T15%3A53%3A24Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Ded5132fb-1da6-423d-906b-eb020e2a359f.webp&sig=KJK8WaT/gC75VMQAUFHxpHon/ysynhciwkpWMrrbD70%3D"
-                        alt="Professional logistics service handling shipments with efficiency"
+                        src="https://cdn.pixabay.com/photo/2019/05/17/14/47/bus-4209838_1280.jpg"
+                        alt="Black passengers enjoying a comfortable and cheerful bus ride"
 
                     />
                     <div className="service-text">
 
-                        <h2>Reliable Freight & Logistics</h2>
-                        From small packages to large cargo, we handle it all with precision and care.
-                        Our efficient freight solutions ensure timely deliveries, keeping your business moving without delays.
+
+
+
+                        <h2>Safe & Comfortable Travel</h2>
+                        We don’t just move goods—we move people too! Whether it’s a short city ride or
+                        a long-distance journey, our modern fleet guarantees comfort, safety, and affordability.
                     </div>
+
 
                 </div>
 
@@ -42,24 +46,24 @@ const Services = () => {
                     />
                 </div>
 
+
+
                 <div className="service-item">
                     <img className="service-image"
-                        src="https://cdn.pixabay.com/photo/2019/05/17/14/47/bus-4209838_1280.jpg"
-                        alt="Black passengers enjoying a comfortable and cheerful bus ride"
+                        src="https://cdn.pixabay.com/photo/2024/07/24/11/44/ai-generated-8917830_1280.jpg"
+                        alt="Professional logistics service handling shipments with efficiency"
 
                     />
                     <div className="service-text">
 
-
-
-
-                        <h2>Safe & Comfortable Travel</h2>
-                        We don’t just move goods—we move people too! Whether it’s a short city ride or
-                        a long-distance journey, our modern fleet guarantees comfort, safety, and affordability.
+                        <h2>Reliable Freight & Logistics</h2>
+                        From small packages to large cargo, we handle it all with precision and care.
+                        Our efficient freight solutions ensure timely deliveries, keeping your business moving without delays.
                     </div>
 
-
                 </div>
+
+                
 
                 <div className="service-item">
                     <div className="service-text">

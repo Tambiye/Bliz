@@ -16,7 +16,7 @@ const Home = () => (
 
         <div className="band"></div>
         <div className="service-page">
-            <h1 className='heading-for-services'>Our Services</h1>
+            <h1 className='heading-for-services'>What You Can Count On.</h1>
 
 
             <section className="service-container">
