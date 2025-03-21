@@ -14,7 +14,7 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="navbar-container">
                 <Link to="/" className="navbar-logo">
-                    Bliz Transport & Logistics
+                    Bliz 
                 </Link>
 
                 {/* <div className="menu-icon" onClick={toggleMenu}>

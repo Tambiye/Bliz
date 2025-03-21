@@ -1,38 +1,36 @@
+/* General Styles */
 body {
-  background-color: #eee;
-  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  color: white;
+  color: #202020;
 }
 
 /* Navbar */
-.navbar {
+navbar {
   background: white;
   color: black;
   display: flex;
-  padding: 10px 20px
+  padding: 10px 20px;
 }
 
 .navbar-logo {
-
-  font-size: 1rem;
+  font-size: 1.7rem;
   font-weight: bold;
   border-radius: 10px;
-  color: #EAB308;
+  color: black;
   text-decoration: none;
-
-
+  padding: 10px;
+  margin-left: 40px;
 }
-
 
 .nav-menu {
   display: flex;
   gap: 3rem;
   list-style: none;
   margin-left: 200px;
-  margin-right: 0;
-
+  margin-right: 200px;
 }
 
 .nav-menu a {
@@ -42,17 +40,6 @@ body {
   transition: color 0.3s;
 }
 
-.nav-menu a:hover {
-  color: #EAB308;
-}
-
-.isActive {
-  font-weight: bolder;
-  color: #EAB308 !important;
-}
-
-
-
 .navbar-container {
   width: 100%;
   display: flex;
@@ -60,78 +47,71 @@ body {
   justify-content: space-between;
   max-width: 100%;
   margin: 0 0;
-
 }
 
 /* Hero Section */
-.home-container {
-  width: 100%;
-  min-height: 50vh;
-  background-image: url('https://www.murphylogistics.com/wp-content/uploads/IMG_4289.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* padding: 20px; */
-  box-sizing: border-box;
-}
-
 .hero-section {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 40px;
-  /* border-radius: 10px; */
-  color: white;
-  max-width: 100%;
-  width: 100%;
+  background: #ffffff;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   height: 80vh;
-
+  margin-top: 0px;
 }
 
 h1 {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #eee;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #5a5a5a;
+  padding: 10px;
+}
+
+.tagline span {
+  color: #5a5a5a;
+  font-size: 1.5rem;
+  padding: 10px;
 }
 
 .tagline {
-  font-size: 3rem;
-
+  font-size: 4rem;
   font-weight: bold;
-  color: #f7c32e;
+  color: #202020;
   margin-bottom: 15px;
+  padding: 10px;
 }
 
-p {
-  font-size: 1rem;
-  line-height: 1.6;
-  max-width: 40%;
-}
-
-/* ✅ Responsive Design: Adjust for Smaller Screens */
+/* Responsive Design */
 @media (max-width: 768px) {
+  .nav-right a,
+  .register-button {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
   .hero-section {
-    padding: 20px;
+    padding: 30px;
   }
 
   h1 {
-    font-size: 1.8rem;
+    font-size: 1rem;
   }
 
   .tagline {
-    font-size: 1.3rem;
+    font-size: 2.5rem;
   }
 
   p {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    max-width: 80%;
   }
 }
-
 
 /* .who-we-are */
 .who-we-are {
@@ -140,7 +120,12 @@ p {
   align-items: center;
   padding: 50px;
   background-color: white;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
+  margin-top: 150px;
+  max-width: 100%;
+  
+  /* margin-left: 200px;
+  margin-right: 200px; */
 }
 
 .who-we-are-text {
@@ -161,12 +146,15 @@ p {
   width: 50%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 50px;
+  
+  
 }
 
 .who-we-are-mini {
   font-size: 16px;
-  color: #666;
+  color: #5a5a5a;
+  
 }
 
 .who-we-are-mini h2 {
@@ -174,12 +162,12 @@ p {
   font-weight: bold;
   color: #000;
   margin-bottom: 8px;
+  
 }
 
 .icon {
   font-size: 60px;
-  color: #f7c32e;
-  /* Adjust color as needed */
+  color: #666;
 }
 
 /* Services Section */
@@ -190,16 +178,11 @@ p {
   margin-bottom: 50px;
   font-size: 40px;
   font-weight: bold;
-  /* border-bottom: #EAB308 5px solid; */
-  /* border: #f7c32e 10px groove ;  */
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
   padding-bottom: 10px;
 }
-
-
-
 
 /* Services Section */
 .services-container {
@@ -208,8 +191,8 @@ p {
   align-items: center;
   margin-top: 50px;
   gap: 40px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 200px;
+  margin-right: 200px;
   margin-bottom: 100px;
 }
 
@@ -219,7 +202,6 @@ p {
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   color: black;
-
   text-align: center;
 }
 
@@ -227,10 +209,6 @@ p {
   color: black;
   font-size: 1.5rem;
 }
-
-
-
-
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
@@ -253,24 +231,20 @@ p {
   .services-container {
     flex-direction: column;
     align-items: center;
+    margin: 50px;
   }
 
   .service {
     width: 100%;
   }
 
-  .service-highlights {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .highlight {
-    width: 90%;
+  .service h2 {
+    font-size: 1.2rem;
   }
 }
 
 .cta {
-  background-color: #f7c32e;
+  background-color: #5a5a5a;
   color: white;
   text-align: center;
   padding: 50px 20px;
@@ -310,7 +284,7 @@ p {
 
 /* Footer */
 footer {
-  background-color: #333;
+  background-color: #202020;
   color: #fff;
   padding: 20px 0;
   text-align: center;
@@ -361,7 +335,16 @@ footer {
 }
 
 /* services */
-/* Shared Styles */
+.band {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: 100px;
+  height: 300px;
+  background: #b9b6b6;
+}
 
 .safe-travel,
 .affordable-travel,
@@ -377,21 +360,13 @@ footer {
   padding: 20px;
   box-sizing: border-box;
   overflow: hidden;
-  gap: 0px; /* Added gap to control spacing */
+  gap: 0px;
+  margin: 20px;
 }
 
-/* Image Containers */
-.safe-travel .image-container,
-.affordable-travel .image-container,
-.expedited-service .image-container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
-}
 
-/* Images */
+
+Images
 .safe-travel img,
 .affordable-travel img,
 .expedited-service img {
@@ -402,17 +377,22 @@ footer {
   max-width: 100%;
 }
 
-/* Text Containers */
+Text Containers
 .safe-travel .text-container,
 .affordable-travel .text-container,
 .expedited-service .text-container {
   flex: 2;
   max-width: 400px;
 }
+  Image Containers
+.image-container {
+width: 100%;
+}
+
 
 /* Heading */
 .heading-for-services {
-  color: #EAB308;
+  color: black;
   text-align: center;
   margin: 50px auto 20px;
   font-size: 40px;
@@ -433,7 +413,8 @@ footer {
     width: 80%;
     font-size: 30px;
   }
-}
+} 
+
 .tracker-container {
   max-width: 500px;
   margin: 20px auto;
@@ -443,7 +424,7 @@ footer {
 .tracker-title {
   font-size: 20px;
   font-weight: bold;
-  color: #EAB308;
+  color: black;
   margin-bottom: 5px;
 }
 
@@ -469,7 +450,7 @@ footer {
 }
 
 .tracker-button {
-  background-color:#EAB308;
+  background-color: black;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -479,10 +460,8 @@ footer {
 }
 
 .tracker-button:hover {
-  background-color: #EAB308;
+  background-color: black;
 }
-
-
 
 .contact-form {
   max-width: 500px;
@@ -503,10 +482,11 @@ label {
 }
 
 .required {
-  color:#EAB308;
+  color: black;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -520,7 +500,7 @@ textarea {
 }
 
 .submit-button {
-  background-color: #EAB308;
+  background-color: black;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -533,5 +513,5 @@ textarea {
 }
 
 .submit-button:hover {
-  background-color: #EAB308;
+  background-color: black;
 }
