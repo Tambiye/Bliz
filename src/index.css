@@ -422,7 +422,7 @@ h1 {
 .booking-conditions {
   background-color: #002F6C;
   padding: 20px;
-  border-radius: 15px;
+  
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
   margin: 20px auto;
@@ -621,6 +621,7 @@ margin-top: 100px;
   display: flex;
   flex-direction: column;
   gap: 50px;
+  padding: 50px;
 }
 
 .service-item {
@@ -635,7 +636,7 @@ margin-top: 100px;
 .service-image {
   width: 600px;
   
-  height: 450px;
+  height: 700px;
   object-fit: cover;
   
   border-radius: 8px;
@@ -662,45 +663,46 @@ margin-top: 100px;
   display: flex;
   flex-direction: column;
   gap: 50px;
-  background-color: #f9f9f9;
+  background-color: #FEFEFE;
   padding: 50px;
 
 }
 
 .service-main-text h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   color: #000;
   margin-bottom: 25px;
 }
 
 .service-main-text p {
-  font-size: 1rem;
+  font-size: 2rem;
   color: #ccc;
-  line-height: 1.5;
+  line-height: 3;
 }
 
 .service-main-item {
   display: flex;
   align-items: center;
   gap: 100px;
-  background: #f9f9f9;
+  background: #FEFEFE;
   padding: 20px;
   border-radius: 10px;
+  margin-top: 100px;
 }
 
 .service-main-image {
-  width: 550px;
-  height: 550px;
+  width: 600px;
+  height: 700px;
   object-fit: cover;
   border-radius: 8px;
 }
 
 .service-main-text {
   flex: 1;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   letter-spacing: 0.5px;
-  line-height: 1.2;
+  line-height: 2;
 }
 
 
@@ -728,9 +730,9 @@ margin-top: 100px;
   color: black;
   text-align: center;
   margin: 50px auto 20px;
-  font-size: 40px;
+  font-size: 70px;
   font-weight: bold;
-  width: 50%;
+  width: 100%;
   margin-top: 70px;
   margin-bottom: 70px;
   padding: 50px;
@@ -739,7 +741,7 @@ margin-top: 100px;
 .services-main-subtext{ color: #555;
   text-align: center;
 
-  font-size: 1rem;
+  font-size: 3rem;
   font-weight: bold;
   width: 100%;
 
@@ -862,7 +864,7 @@ textarea {
 }
 
 
-.clean-cars{background-color: #002F6C;
+.clean-cars{background-color:#0C0404;
   width: 100%;
 height: 800px;}
 .safe-clean{
@@ -895,7 +897,7 @@ height: 800px;}
 
 .booking-conditions {
   padding: 1.5rem;
-  margin-top: 200px;
+  
   
 }
 
@@ -931,24 +933,25 @@ height: 800px;}
   padding: 1rem;
   margin-top: 50px;
 
-  background:  #F57C00 ;
+  background: #002F6C ;
   border-radius: 8px;
 }
 
 .guideline-image img {
   width: 100%;
-  height: 500px;
+  height: 450px;
   object-fit: contain;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
 
 .guideline-text {
-  font-size: 1.5rem;
-  line-height: 1.5;
+  font-size: 1.8rem;
+  line-height: 1.2;
   padding: 0 1rem;
   color: white;
   font-weight: bold;
+  
 }
 
 .guideline-text li {
@@ -961,41 +964,54 @@ height: 800px;}
     width: 100%;
   }
 }
+.how-to-book{background-color: #F57C00;}
+.how-to-book-heading{text-align: center;font-size: 60px;}
+.how-to-book-steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top:0;
+  flex-wrap: wrap;
+  background-color: #F57C00 ;
+  padding: 50px;
+  border-radius: 8px;
+  
+}
 
-
-/* 
-.rental-guidelines {
+.step {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-}
-
-
-.guideline-row {
-  display: flex;
   align-items: center;
-  gap: 5px;
-  background: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-
-}
-
-.guideline-text {
-  width: 300px;
-  ;
-
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.guideline-image {
-  width: 300px;
-  height: 200px;
+  text-align: center;
   flex: 1;
-  object-fit: contain;
-} */
+  min-width: 150px;
+}
+
+.step-number {
+  width: 100px;
+  height: 100px;
+  background-color:#002F6C;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.step-text h2{
+  font-size: 2rem;
+  color: #333;
+}
+
+
+.step-text p {
+  font-size: 1.5rem;
+  color: #555;
+  line-height: 1.5;
+}
 
 
 
@@ -1096,7 +1112,7 @@ height: 800px;}
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Segoe UI', Tahoma, sans-serif;
+  
   color: #222;
 }
 

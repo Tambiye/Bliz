@@ -97,7 +97,7 @@ const Home = () => (
         <div className="service-page">
 
 
-            <h1 className='heading-for-services'>What You Can Count On.</h1>
+            <h1 className='heading-for-services'>What You Can Count On</h1>
 
             <section className="service-container">
                 <div className="service-item">
@@ -143,7 +143,38 @@ const Home = () => (
         </div>
         <section className='clean-cars'><div className='safe-clean'>Clean, comfortable  cars and highly vetted drivers.</div>
             <div className='vetted'>We take pride in offering clean, comfortable cars for every ride, paired with highly vetted drivers who are committed to your safety and comfort. Whether you're heading out
-                for a quick trip or a long journey, we ensure a smooth, enjoyable experience from start to finish.</div></section>
+                for a quick trip or a long journey, we ensure a smooth, enjoyable experience from start to finish.</div>
+        </section>
+
+        <section className='how-to-book'>
+            <h2 className='how-to-book-heading'>How to Book</h2>
+            <div className='how-to-book-steps'>
+                <div className='step'>
+                    <div className='step-number'>1</div>
+                    <div className='step-text'>
+                        <h2>Choose your service</h2>
+                        <p>Pick the ride or package that fits your travel needs.</p>
+                    </div>
+                </div>
+                <div className='step'>
+                    <div className='step-number'>2</div>
+                    <div className='step-text'>
+                        <h2>Fill in your travel details</h2>
+                        <p>Enter your pickup point, destination, date, and time.</p>
+                    </div>
+                </div>
+                <div className='step'>
+                    <div className='step-number'>3</div>
+                    <div className='step-text'>
+                        <h2>Confirm and enjoy your ride</h2>
+                        <p>Review the details, confirm your booking, and you're all set!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
         <div className='booking-conditions'>
 
             <h2 className='bookingCon-heading'><strong>Booking Conditions</strong></h2>

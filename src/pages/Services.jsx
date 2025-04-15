@@ -19,7 +19,7 @@ const Services = () => {
                     />
 
                     <div className="service-main-text">
-                        <h2>Bliz Airport Pick-Up Service</h2>
+                        <h2>Airport Service</h2>
                         Step off the plane and into luxury with Bliz.
                         Our premium airport pick-up service guarantees a smooth and stress-free
                         ride from the airport to your destination.
@@ -81,12 +81,27 @@ const Services = () => {
                     />
 
                     <div className="service-main-text">
-                        <h2>Express Delivery – Fast, Secure, Reliable</h2>
+                        <h2>Express Delivery</h2>
                         Whether it’s a last-minute gift or an important document,
                         our express delivery service guarantees swift, secure, and hassle-free shipping,
                         right to your doorstep.
                     </div>
+
                 </div>
+
+                <div className="service-main-item">
+                    <div className="service-main-text">
+                        <h2>Interstate Travel</h2>
+                        Enjoy safe and comfortable travel across states with our clean vehicles and professional, vetted drivers.
+                    </div>
+
+                    <img className="service-main-image"
+                        src="https://images.pexels.com/photos/8052230/pexels-photo-8052230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="Passenger ready for interstate travel"
+                    />
+                </div>
+
+
             </section>
 
 
