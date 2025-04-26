@@ -385,6 +385,9 @@ h1 {
 }
 
 .booking-btn {
+  display: flex-end;
+  justify-content: end;
+  align-items: end;
   background-color: #002F6C;
   color: white;
   padding: 0.3rem 1rem;
@@ -839,29 +842,29 @@ h1 {
 }
 
 
-.service-main-container {
+/* .service-main-container {
   display: flex;
   flex-direction: column;
   gap: 50px;
   background-color: #FEFEFE;
   padding: 50px;
 
-}
+} */
 
-.service-main-text h2 {
+/* .service-main-text h2 {
   font-size: 3rem;
   font-weight: bold;
   color: #000;
   margin-bottom: 25px;
-}
+} */
 
-.service-main-text p {
+/* .service-main-text p {
   font-size: 2rem;
   color: #ccc;
   line-height: 3;
-}
+} */
 
-.service-main-item {
+/* .service-main-item {
   display: flex;
   align-items: center;
   gap: 100px;
@@ -869,24 +872,24 @@ h1 {
   padding: 20px;
   border-radius: 10px;
   margin-top: 100px;
-}
+} */
 
-.service-main-image {
+/* .service-main-image {
   width: 600px;
   height: 700px;
   object-fit: cover;
   border-radius: 8px;
-}
+} */
 
-.service-main-text {
+/* .service-main-text {
   flex: 1;
   font-size: 1.5rem;
   letter-spacing: 0.5px;
   line-height: 2;
-}
+} */
 
 
-.service-main-heading {
+/* .service-main-heading {
   color: #000;
   text-align: center;
 margin-top: 200px;
@@ -900,7 +903,170 @@ margin-top: 200px;
 
   padding-bottom: 20px;
 
+} */
+
+.service-main-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top:200px;
 }
+
+.services-main-subtext {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+.services-main-subtext span {
+  font-weight: bold;
+  color: #007BFF;
+}
+
+.services-main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.service-main-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.service-main-item {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.service-main-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-main-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.service-main-text {
+  padding: 20px;
+}
+
+.service-main-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #333;
+}
+
+
+.service-main-text p, 
+.service-main-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+
+.process-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.process-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.process-subtext {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.process-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.step-box {
+  background: #fff;
+  border: 2px solid #f0f0f0;
+  border-radius: 12px;
+  padding: 30px 20px;
+  width: 200px;
+  min-height: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.step-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.step-box h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.step-box p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.arrow {
+  font-size: 2.5rem;
+  color: orange;
+  animation: moveArrow 1s infinite alternate;
+}
+
+@keyframes moveArrow {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(10px);
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .process-steps {
+    flex-direction: column;
+  }
+  .arrow {
+    transform: rotate(90deg);
+    animation: moveArrowVertical 1s infinite alternate;
+  }
+}
+
+@keyframes moveArrowVertical {
+  from {
+    transform: rotate(90deg) translateY(0);
+  }
+  to {
+    transform: rotate(90deg) translateY(10px);
+  }
+}
+
 
 
 .why-bliz {
@@ -954,19 +1120,17 @@ margin-top: 200px;
   font-weight: bold;
   width: 100%;
   margin-top: 70px;
-  margin-bottom: 70px;
-  padding: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
 }
 
 .services-main-subtext {
   color: #555;
   text-align: center;
-
   font-size: 2rem;
   font-weight: bold;
   width: 100%;
-
-  padding: 20px;
+  padding: 50px;
 }
 
 /* Responsive Design */

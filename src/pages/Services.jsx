@@ -13,7 +13,7 @@ const Services = () => {
             <section className="service-main-container">
                 <div className="service-main-item">
                     <img className="service-main-image"
-                        src="https://images.pexels.com/photos/5717569/pexels-photo-5717569.jpeg"
+                        src="https://images.pexels.com/photos/5717578/pexels-photo-5717578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2jpeg"
 
                         alt="Smiley woman having coffee and looking at smartphone from her car"
                     />
@@ -100,9 +100,42 @@ const Services = () => {
                         alt="Passenger ready for interstate travel"
                     />
                 </div>
+                
 
 
             </section>
+            <div className="process-container">
+                <h2 className="process-heading">How It Works</h2>
+                <p className="process-subtext">Follow these simple steps to get started with our premium service.</p>
+
+                <div className="process-steps">
+                    <div className="step-box">
+                        <h3>1. Browse Services</h3>
+                        <p>Explore and choose the service that fits your needs best.</p>
+                    </div>
+
+                    <div className="arrow">➔</div>
+
+                    <div className="step-box">
+                        <h3>2. Book Appointment</h3>
+                        <p>Schedule your service easily through our online system.</p>
+                    </div>
+
+                    <div className="arrow">➔</div>
+
+                    <div className="step-box">
+                        <h3>3. Consult with Expert</h3>
+                        <p>Speak with our specialists to finalize your details.</p>
+                    </div>
+
+                    <div className="arrow">➔</div>
+
+                    <div className="step-box">
+                        <h3>4. Get Service</h3>
+                        <p>Relax and enjoy your premium service experience!</p>
+                    </div>
+                </div>
+            </div>
 
 
         </div></>
