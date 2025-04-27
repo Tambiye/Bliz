@@ -1,7 +1,11 @@
+:root {
+  --vibrant-orange: #F57C00;
+  --deep-blue: #002F6C;
+  --neutral-white: #FEFEFE;
+}
 /* General Styles */
 body {
-  background-color: #ffffff;
-  font-family: 'Franklin Gothic', sans-serif;
+  background-color: var(--neutral-white);
 }
 
 .bliz-navbar {
@@ -10,18 +14,6 @@ body {
   left: 0;
   z-index: 2;
   width: 100%;
-
-}
-
-.xui-opacity-9 {
-  color: #0C0404;
-  font-size: 1rem;
-  padding: 10px;
-}
-
-.xui-img-150 {
-  width: 150px;
-  height: auto;
 
 }
 
@@ -108,15 +100,6 @@ body {
 
 }
 
-
-h1 {
-  font-size: 1.2rem;
-  font-weight: 300;
-  margin-bottom: 15px;
-  color: #5a5a5a;
-  padding: 10px;
-}
-
 .tagline span {
   color: #002F6C;
   font-size: 1.6rem;
@@ -166,10 +149,7 @@ h1 {
     font-size: 2.5rem;
   }
 
-  p {
-    font-size: 1rem;
-    max-width: 80%;
-  }
+  
 }
 
 
@@ -487,12 +467,6 @@ h1 {
   font-weight: 600;
   color: #000;
 }
-
-
-
-
-
-.xui-bg-light {height: 700px;}
 
 
 

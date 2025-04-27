@@ -7,12 +7,11 @@ import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
 import BookNow from './pages/BookNow'; // Importing BookNow page
 import Footer from './components/Footer';
-import '@richaadgigi/stylexui/css/xui.min.css';
 
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />

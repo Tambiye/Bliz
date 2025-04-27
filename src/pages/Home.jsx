@@ -2,73 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '@richaadgigi/stylexui/css/xui.min.css';
 import { Location, Time, Globe, DeliveryTruck } from "@carbon/icons-react";
+import HomeHeader from '../components/HomeHeader';
+import WhatWeDoBest from '../components/WhatWeDoBest';
+import ShippingAndRentals from '../components/ShippingAndRentals';
 
 const Home = () => (
+    <>
+    <HomeHeader />
+    <WhatWeDoBest />
+    <ShippingAndRentals />
     <div>
-        <div className="home-container">
-            <div className="hero-section">
-                <div className="tagline"><span>Bliz </span><br /> Move freely.<br /> Anytime. Anywhere.</div>
-                <h1>Bliz is your all-in-one transport and logistics platform—fast, safe, and hassle-free</h1>
-            </div>
-        </div>
-        <div className="hero-subtext">
-            <Link to="/book-now" className="book-btn">
-                Book Now
-            </Link></div>
-        <div
-            className="xui-bg-light xui-w-full xui-h-500 xui-bg-size-cover"
-            style={{
-                backgroundImage: "url('https://images.pexels.com/photos/18029645/pexels-photo-18029645/free-photo-of-three-toyota-land-cruiser.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
-                backgroundPosition: "bottom",
-                backgroundRepeat: "no-repeat",
-                backgroundAttachment: "fixed"
-            }}
-        >
-        </div>
-
-
-        <div>
-            <div className="homepage-service-heading">Our services</div>
-            <div className="homepage-service-subtext">
-                <p>We bring you <span>Premium</span> and <span>Comfortable</span></p>
-                <p className="chauffer-service">Chauffeur Service.</p>
-            </div>
-        </div>
-
-
-
-
-        <div className="block-services">
-
-            <div className="service airport-transfers city-bg">
-                <div className="text-overlay">
-                    <h2 className="highlight">Airport Transfers</h2>
-                    <p className="highlight small">Stress-free pickup and drop-off for all flights.</p>
-                </div>
-            </div>
-
-            <div className="service intercity-travel travel-bg">
-                <div className="text-overlay">
-                    <h2 className="highlight">City & State Travel</h2>
-                    <p className="highlight small">Comfortable rides between cities and states.</p>
-                </div>
-            </div>
-
-            <div className="service car-rental rental-bg">
-                <div className="text-overlay">
-                    <h2 className="highlight">Car Rentals</h2>
-                    <p className="highlight small">Quality vehicles for your travel needs.</p>
-                </div>
-            </div>
-
-            <div className="service logistics delivery-bg">
-                <div className="text-overlay">
-                    <h2 className="highlight">Logistics</h2>
-                    <p className="highlight small">Reliable pickup and delivery services.</p>
-                </div>
-            </div>
-
-        </div>
 
         <div className="cost-known">
             <div className="cost-heading">
@@ -388,6 +331,7 @@ const Home = () => (
 
 
     </div>
+    </>
 );
 
 export default Home;
