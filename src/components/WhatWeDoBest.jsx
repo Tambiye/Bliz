@@ -13,7 +13,7 @@ const WhatWeDoBest = () => {
             </div>
             <div className="xui-mt-2 xui-lg-mt-4">
                 <Swiper
-                    slidesPerView={1.2}
+                    slidesPerView={3.8}
                     spaceBetween={20}
                     slidesOffsetBefore={20}
                     slidesOffsetAfter={20}
